@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+#grid-container {
+    padding-top: 100px;
+}
+.img-text-container {
+    padding: 10px;
+}
+.img-text-container p{
+    padding: 15px 0 30px 0;
+    text-align: center;
+}
+.img-text-container h6{
+    text-align: center;
+    font-weight: bold;
+}
+.img-text-container img{
+    width: 100% !important;
+    height: 280px !important;
+}
+.about-us{
+    padding: 100px;
+}
+.about-us h5{
+    font-size: 30px;
+    padding: 30px;
+    font-weight: bold;
+}
+.about-us img{
+    border-radius: 5px;
+}
+.about-us p{
+    padding: 30px 0;
+}
+@media screen and (min-width: 300px) and (max-width: 900px) {
+    .about-us {
+        padding: 30px;
+    }
+    .about-us img {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 375px) {
+    .about-us img{
+        width: 100%;
+    }
+}
+
+.item-container{
+    padding: 10px;
+}
+.item-holder{
+    position: relative;
+    height: 400px !important;
+}
+.item-holder img{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.view{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    font-size: 40px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.item-holder:hover img{
+    opacity: 0.7;
+}
+.item-holder:hover .view{
+    opacity: 1;
+}
+.pancakes-bg {
+    background-image: url("../images/pancake1.jpg") !important;
+    height: 400px !important;
+    background-position: top !important;
+    background-size: cover !important;
+}
+.rice-bg {
+    background-image: url("../images/rice1.jpg") !important;
+    height: 400px !important;
+    background-position: top !important;
+    background-size: cover !important;
+}
+.waffles-bg {
+    background-image: url("../images/waffles1.jpg") !important;
+    height: 400px !important;
+    background-position: top !important;
+    background-size: cover !important;
+}
+.milkshake-bg {
+    background-image: url("../images/milkshake.jpg") !important;
+    height: 400px !important;
+    background-position: top !important;
+    background-size: cover !important;
+}
+.carousel {
+    height: 600px !important;
+}
+.carousel img{
+    width: 100% !important;
+}
+
+.links{
+    padding: 50px 25px;
+    text-align: center;
+    line-height: 2.0;
+}
+.contacts-container{
+    height: 561px !important;
+    border-bottom: 5px solid black;
+}
+.text-img-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+@media screen and (min-width: 300px) and (max-width: 900px){
+    .text-img-container{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .text-img-container img{
+        width: 100%;
+    }
+}
+.dropdown-content h4{
+    font-size: 30px;
+    text-align: center !important;
+}
